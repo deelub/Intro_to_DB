@@ -1,11 +1,6 @@
-Select Column_name,
-		column_type,
-        is_nullable,
-        column_key,
-        column_default,
-        extra
+Select COLUMN_NAME, COLUMN_TYPE
 FROM
-	Information_schema.columns
+	INFORMATION_SCHEMA.COLUMNS
 WHERE
-	table_name='Books'
-    AND table_schema= DATABASE()
+	TABLE_SCHEMA= 'alx_book_store'
+    AND TABLE_NAME= 'Books'
