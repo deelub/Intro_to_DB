@@ -12,7 +12,7 @@ def connection():
 
         if mydb.is_connected():
             cursor=connection.cursor()
-            cursor.executed("CREATE DATABSE IF NOT EXISTS alx_book_store")
+            cursor.executed("CREATE DATABASE IF NOT EXISTS alx_book_store")
             print(mydb.server_info)
 
     except Error as e:
